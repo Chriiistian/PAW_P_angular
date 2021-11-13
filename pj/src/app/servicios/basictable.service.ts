@@ -1,9 +1,13 @@
+/* Se intento implementar servicios al basictable, pero a la final falto el conocimiento para realizarlo.
+   En basictable.service.ts; en basictable.component.ts; y en basictable.component.html se encuentra en comentarios
+   lo que se intento hacer para implementar los servicios.
+
 import { Injectable } from "@angular/core";
 
 @Injectable()
 
 export class BasictableService{
-
+    
     private tablas: Tabla[]=[
         {
             nombre: "Deshmukh",
@@ -42,15 +46,18 @@ export class BasictableService{
             rol: "supporter"
         }
     ]
-
+    
     constructor(){
         console.log("Servicio Dashboard listo para usarse...")
     }
 
+    
     getTablas():Tabla[]{
         return this.tablas;
     }
+    
 }
+
 
 export interface Tabla{
     nombre: string;
@@ -58,3 +65,4 @@ export interface Tabla{
     usuario: string;
     rol: string;
 }
+*/
